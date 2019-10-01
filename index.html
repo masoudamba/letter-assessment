@@ -7,9 +7,46 @@
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="./css.txt"/>
 </head>
+<head>
+<style>
+body {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.sender-column {
+    text-align: right;
+}
+
+h1 {
+    font-size: 1.5em;
+}
+
+h2 {
+    font-size: 1.3em;
+}
+
+p,
+ul,
+ol,
+dl,
+address {
+    font-size: 1.1em;
+}
+
+p,
+li,
+dd,
+dt,
+address {
+    line-height: 1.5;
+}
+
+    </style>
+    </head>
 <body>
-    <address><p align=right>
-        <strong class="sender-column">Dr Eleanor Gaye</strong><br>
+    <address class="sender-column">
+        <strong>Dr Eleanor Gaye</strong><br>
         Awesome Science faculty<br>
         University of Awesome<br>
         Bobtown, CA 99999,<br>
@@ -17,13 +54,13 @@
        <B> Tel</B>: 123-456-7890<br>
         <B>Email</B>: no_reply@example.com<br>
 
-        <time class="sender-column">20 January 2016<br></p>
-
+        <time date="20-01- 2016">20 January</time><br></p>
+    </address>
        <B> Miss Eileen Dover</B><br>
         4321 Cliff Top Edge<br>
         Dover, CT9 XXX<br>
         UK<br>
-    </address><br />
+    
     <h1>Re: Eileen Dover university application</h1>
     <p></p>
     <p1>Dear Eileen,</p1>
@@ -36,9 +73,12 @@
     
         <ul type= "numbers">
 
-            <li>First semester: 9 September 2016</li>
-            <li>Second semester: 15 January 2017</li>
-            <li>Third semester: 2 May 2017</li>
+            <li>
+                First semester: <time date="09-09-2016">9 September 2016</time></li>
+            <li>
+                Second semester:<time date="15-01-2017"> 15 January 2017</time></li>
+            <li>
+                Third semester:<time date="02-05-2017"> 2 May 2017</time></li>
 
         </ul>
     
@@ -55,7 +95,7 @@
 
             <li>Turning H2O into wine, and the health benefits of Resveratrol (C14H12O3.)</li>
             <li>Measuring the effect on performance of funk bassplayers at temperatures exceeding 30°C (86°F), when the audience size exponentially increases (effect of 3 × 103 increasing to 3 × 104.)</li>
-            <li>HTML and CSS constructs for representing musical scores.</li>
+            <li><abbr title="Hypertext Markup Language">HTML</abbr> and<abbr title="Cascading Style Sheet"> CSS</abbr> constructs for representing musical scores.</li>
 
         </ol>
 
@@ -64,16 +104,18 @@
     <h3>Exotic dance moves</h3>
     <p></p>
     <p17>Yes, you are right! As part of my post-doctorate work, I did study exotic tribal dances. To answer your question, my favourite dances are as follows, with definitions:<br>
-    <p>Polynesian chicken dance<br>
-        <blockquote>A little known but very influential dance dating back as far as 300BC, a whole village would dance around in a circle like chickens, to encourage their livestock to be "fruitful."</blockquote><br>
-        Icelandic brownian shuffle<br>
-        <blockquote>Before the Icelanders developed fire as a means of getting warm, they used to practice this dance which involved huddling close together in a circle on the floor, and shuffling their bodies around in imperceptibly tiny, very rapid movements. One of my fellow students used to say that he thought this dance inspired modern styles such as Twerking.</blockquote><br>
-        Arctic robot dance<br>
-        <blockquote>An interesting example of historic misinformation, English explorers in the 1960s believed to have discovered a new dance style characterized by "robotic", stilted movements, being practiced by inhabitants of Northern Alaska and Canada. Later on however it was discovered that they were just moving like this because they were really cold.</blockquote><br>        
+        <dl>
+    <dt>Polynesian chicken dance</dt><br>
+        <dd>A little known but very influential dance dating back as far as 300BC, a whole village would dance around in a circle like chickens, to encourage their livestock to be "fruitful."</dd><br>
+        <dt>Icelandic brownian shuffle</dt><br>
+        <dd>Before the Icelanders developed fire as a means of getting warm, they used to practice this dance which involved huddling close together in a circle on the floor, and shuffling their bodies around in imperceptibly tiny, very rapid movements. One of my fellow students used to say that he thought this dance inspired modern styles such as Twerking.</dd><br>
+        <dt>Arctic robot dance</dt><br>
+        <dd>An interesting example of historic misinformation, English explorers in the 1960s believed to have discovered a new dance style characterized by "robotic", stilted movements, being practiced by inhabitants of Northern Alaska and Canada. Later on however it was discovered that they were just moving like this because they were really cold.</dd><br>        
+        </dl>
     <p>For more of my research, see my<a href="http//example.com."> exotic dance research page.</a></p>
     
         <p>Yours sincerely<br></p>
         <p>Dr Eleanor Gaye</br></p>
-        <p>University of Awesome motto: "Be awesome to each other." <i>-- The memoirs of Bill S Preston, Esq</i><br></p>
+        <p>University of Awesome motto: "Be awesome to each other." <i>-- The memoirs of Bill S Preston,<abbr title="Esquire"> Esq</abbr></i><br></p>
 </body>
 </html>
